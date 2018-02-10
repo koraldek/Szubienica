@@ -1,0 +1,107 @@
+﻿<Page
+    x:Class="Szubienica.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Szubienica"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+
+        <Grid Height="Auto" VerticalAlignment="Top" Visibility="Visible" >
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="0.174"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+
+            <Grid Margin="0,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" MinHeight="80">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition MinWidth="100"  />
+                    <ColumnDefinition MinWidth="100" />
+                    <ColumnDefinition MinWidth="100" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"  />
+                </Grid.RowDefinitions>
+
+                <Button x:ConnectionId='30' x:Name="NewGameB" Content="New game" Grid.Column="0"  Margin="20" MinWidth="200" MinHeight="60" HorizontalAlignment="Center"                        ></Button>
+                <Button x:ConnectionId='31' x:Name="TipB" Content="Tip" Grid.Column="1" Margin="20" MinWidth="200" MinHeight="60"                   ></Button>
+                <Button x:ConnectionId='32' x:Name="GiveUpB" Content="Give up" Grid.Column="2" Margin="20" MinWidth="200" MinHeight="60"                      ></Button>
+            </Grid>
+
+        </Grid>
+        <!-- koniec menu-->
+
+        <Grid Grid.Row="1" Margin="10" HorizontalAlignment="Center">
+            <!-- Haslo-->
+            <TextBlock x:ConnectionId='29' x:Name="passBox" VerticalAlignment="Bottom" FontSize="48" FontWeight="Bold" FontFamily="Consolas" FocusVisualPrimaryBrush="#FF1400FF">M O T Y W</TextBlock>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="2*"  />
+            </Grid.ColumnDefinitions>
+
+            <Image x:ConnectionId='2' x:Name="szubienicaImage" Source="res/img/s0.bmp" HorizontalAlignment="Left" VerticalAlignment="Bottom" />
+
+            <Grid Margin="827,10,0,10" HorizontalAlignment="Right" Grid.ColumnSpan="2" Width="403" >
+                <StackPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Left" XYFocusKeyboardNavigation="Enabled" >
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" XYFocusKeyboardNavigation="Enabled">
+                        <Button x:ConnectionId='21' x:Name="bA"             Margin="5" FontSize="36" FontFamily="Consolas">A</Button>
+                        <Button x:ConnectionId='22' x:Name="bB"             Margin="5" FontSize="36" FontFamily="Consolas">B</Button>
+                        <Button x:ConnectionId='23' x:Name="bC"             Margin="5" FontSize="36" FontFamily="Consolas">C</Button>
+                        <Button x:ConnectionId='24' x:Name="bD"             Margin="5" FontSize="36" FontFamily="Consolas">D</Button>
+                        <Button x:ConnectionId='25' x:Name="bE"             Margin="5" FontSize="36" FontFamily="Consolas">E</Button>
+                        <Button x:ConnectionId='26' x:Name="bF"             Margin="5" FontSize="36" FontFamily="Consolas">F</Button>
+                        <Button x:ConnectionId='27' x:Name="bG"             Margin="5" FontSize="36" FontFamily="Consolas">G</Button>
+                        <Button x:ConnectionId='28' x:Name="bH"             Margin="5" FontSize="36" FontFamily="Consolas">H</Button>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" XYFocusKeyboardNavigation="Enabled">
+                        <Button x:ConnectionId='13' x:Name="bI"             Margin="5" FontSize="36" FontFamily="Consolas">I</Button>
+                        <Button x:ConnectionId='14' x:Name="bJ"             Margin="5" FontSize="36" FontFamily="Consolas">J</Button>
+                        <Button x:ConnectionId='15' x:Name="bK"             Margin="5" FontSize="36" FontFamily="Consolas">K</Button>
+                        <Button x:ConnectionId='16' x:Name="bL"             Margin="5" FontSize="36" FontFamily="Consolas">L</Button>
+                        <Button x:ConnectionId='17' x:Name="bM"             Margin="5" FontSize="36" FontFamily="Consolas">M</Button>
+                        <Button x:ConnectionId='18' x:Name="bN"             Margin="5" FontSize="36" FontFamily="Consolas">N</Button>
+                        <Button x:ConnectionId='19' x:Name="bO"             Margin="5" FontSize="36" FontFamily="Consolas">O</Button>
+                        <Button x:ConnectionId='20' x:Name="bP"             Margin="5" FontSize="36" FontFamily="Consolas">P</Button>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" XYFocusKeyboardNavigation="Enabled">
+                        <Button x:ConnectionId='5' x:Name="bQ"             Margin="5" FontSize="36" FontFamily="Consolas">Q</Button>
+                        <Button x:ConnectionId='6' x:Name="bR"             Margin="5" FontSize="36" FontFamily="Consolas">R</Button>
+                        <Button x:ConnectionId='7' x:Name="bS"             Margin="5" FontSize="36" FontFamily="Consolas">S</Button>
+                        <Button x:ConnectionId='8' x:Name="bT"             Margin="5" FontSize="36" FontFamily="Consolas">T</Button>
+                        <Button x:ConnectionId='9' x:Name="bU"             Margin="5" FontSize="36" FontFamily="Consolas">U</Button>
+                        <Button x:ConnectionId='10' x:Name="bW"             Margin="5" FontSize="36" FontFamily="Consolas">W</Button>
+                        <Button x:ConnectionId='11' x:Name="bV"             Margin="5" FontSize="36" FontFamily="Consolas">V</Button>
+                        <Button x:ConnectionId='12' x:Name="bX"             Margin="5" FontSize="36" FontFamily="Consolas">X</Button>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left"  XYFocusKeyboardNavigation="Enabled">
+                        <Button x:ConnectionId='3' x:Name="bY"             Margin="5" FontSize="36" FontFamily="Consolas">Y</Button>
+                        <Button x:ConnectionId='4' x:Name="bZ"             Margin="5" FontSize="36" FontFamily="Consolas">Z</Button>
+                    </StackPanel>
+                </StackPanel>
+
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="3" VerticalAlignment="Top" HorizontalAlignment="Center" >
+            <TextBlock x:ConnectionId='1' x:Name="footerTxt" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="32">
+                Good luck!
+            </TextBlock>
+        </Grid>
+
+    </Grid>
+</Page>
+
